@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ebanx.Core\Ebanx.Core.csproj" />
     <ProjectReference Include="..\Ebanx.Domain\Ebanx.Domain.csproj" />
     <ProjectReference Include="..\Ebanx.Infrastructure\Ebanx.Infrastructure.csproj" />
   </ItemGroup>

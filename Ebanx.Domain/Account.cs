@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ebanx.Domain
+﻿namespace Ebanx.Domain
 {
     public class Account
     {

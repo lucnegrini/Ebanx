@@ -1,8 +1,9 @@
 ﻿using Ebanx.Domain;
 using Ebanx.Infrastructure.Abstractions;
+using Ebanx.Infrastructure.Exceptions;
 using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Linq;
 
 namespace Ebanx.Infrastructure.Repositories
 {
@@ -16,7 +17,12 @@ namespace Ebanx.Infrastructure.Repositories
 
         public Account GetAccountById(int accountId)
         {
-            throw new NotImplementedException();
+            var account = Accounts.FirstOrDefault(a => a.Id == accountId);
+
+            if (account == null)
+                throw new InvalidAccountException();
+
+            return account;
         }
     }
 }
