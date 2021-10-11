@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Ebanx.Domain\Ebanx.Domain.csproj" />
+    <ProjectReference Include="..\Ebanx.Infrastructure\Ebanx.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>
