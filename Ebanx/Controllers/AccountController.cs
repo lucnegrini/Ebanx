@@ -61,7 +61,7 @@ namespace Ebanx.Controllers
         public IActionResult Reset()
         {
             _accountService.ResetState();
-            return Ok();
+            return Ok("OK");
         }
     }
 }
