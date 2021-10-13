@@ -4,7 +4,8 @@ namespace Ebanx.Core.Interfaces
 {
     public interface IAccountService
     {
-        double GetBalanceFromAccount(int accountId);
-        EventResponse PostEvent(EventRequest request);
+        double GetBalanceFromAccount(string accountId);
+        IEventResponse PostEvent(EventRequest request);
+        void ResetState();
     }
 }

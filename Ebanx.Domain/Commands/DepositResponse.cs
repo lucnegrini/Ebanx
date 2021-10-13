@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Ebanx.Domain.Commands
+﻿namespace Ebanx.Domain.Commands
 {
-    public class DepositResponse : EventResponse
+    public class DepositResponse : IEventResponse
     {
+        public AccountResponse destination { get; set; }
     }
 }
