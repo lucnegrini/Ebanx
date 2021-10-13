@@ -1,6 +1,5 @@
 ﻿using Ebanx.Core.Interfaces;
 using Ebanx.Domain.Commands;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
@@ -61,7 +60,7 @@ namespace Ebanx.Controllers
         public IActionResult Reset()
         {
             _accountService.ResetState();
-            return Ok("OK");
+            return Ok();
         }
     }
 }
